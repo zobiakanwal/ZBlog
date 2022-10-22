@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+            background-color: blanchedalmond;
+        }
+
+         img:not(.logo) {
+            width: 90px;
+            margin: auto;
+            display: block;
+            margin-top: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+            /* background-color: hsl(34, 100%, 80%); */
+            background-color: hsl(34, 93%, 58%);
+            border: 2px solid rgb(99, 95, 95);
+            padding: 15px 30px;
+            margin: 30px;
+            border-radius: 15px;
+            /* box-shadow: 5px 10px 15px; */
+            overflow: hidden;
+        }
+        .box:hover{
+            box-shadow:10px 10px;
+            transition: 0.3s;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .box p {
+            padding-top: 14px;
+        }
+
+
+
+
+        nav ul {
+            background-color: black;
+            padding: 17px;
+            float: right;
+        }
+
+        nav {
+            overflow: auto;
+            background-color: black;
+        }
+
+        nav ul li a {
+            color: aliceblue;
+            padding: 10px;
+            text-decoration: none;
+
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a:hover {
+            color: hsl(34, 100%, 80%);
+            ;
+        }
+
+        footer {
+            background-color: black;
+            color: bisque;
+            padding: 12px;
+            text-align: center;
+            font-size: 15px;
+        }
+        #btn{
+            background-color: bisque;
+            padding: 10px;
+            border-radius:10px;
+            float: right;
+        }
+
+        i{
+        font-size:20px;
+        color: hsl(24, 100%, 51%); 
+        background-color:bisque; 
+        border-radius: 15px; 
+        width: 24px; 
+        text-align: center;
+        }
+        .navbar img{
+            width: 54px;
+            padding-left: 15px;
+            float: left;
+            padding-top: 6px;
+        }
+        h3.logoh{
+            color: white;
+            padding-top: 15px;
+            margin-left: 10px;
+            display: inline-block;
+        }
+        #more{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="https://seeklogo.com/images/R/rover-inu-rover-logo-95FF2F26C3-seeklogo.com.png" alt="Image not found">
+            <h3 class="logoh">Z Blog</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img class="mimg" src="https://seeklogo.com/images/R/rover-inu-rover-logo-95FF2F26C3-seeklogo.com.png" alt="Image not found">
+        <h1>Welcome to Z Blog</h2>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore earum officia ipsum accusantium sapiente
+                ad
+                similique quo sequi vero eveniet, at iusto voluptatibus, quaerat beatae, doloremque laudantium ex
+                dolores
+                est placeat. Fuga, eligendi nisi?<span id="dots">...</span> <span id="more">Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Maxime odit minima repellat libero laboriosam sed assumenda explicabo
+                    aliquid doloribus. Atque, sint ab!</span></p>
+                    <button id="btn" onclick="Read()"> <i class='fas fa-book'></i> Read More</button></p>
+        </div>
+        <div class="box">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore earum officia ipsum accusantium sapiente
+                ad
+                similique quo sequi vero eveniet, at iusto voluptatibus, quaerat beatae, doloremque laudantium ex
+                dolores
+                est placeat. Fuga, eligendi nisi? <span id="dots">...</span> <span id="more">Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Maxime odit minima repellat libero laboriosam sed assumenda explicabo
+                    aliquid doloribus. Atque, sint ab!</span></p>
+                    <button onclick="Read()" id="btn"> <i class='fas fa-book'></i> Read More</button>
+        </div>
+        <div class="box">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore earum officia ipsum accusantium sapiente
+                ad
+                similique quo sequi vero eveniet, at iusto voluptatibus, quaerat beatae, doloremque laudantium ex
+                dolores
+                est placeat. Fuga, eligendi nisi?<span id="dots">...</span> <span id="more">Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Maxime odit minima repellat libero laboriosam sed assumenda explicabo
+                    aliquid doloribus. Atque, sint ab!</span></p>
+                    <button id="btn" onclick="Read()"> <i class='fas fa-book'></i> Read More</button>
+        </div>
+    </div>
+    <footer>Copyright &COPY; 2022 all rights reserved</footer>
+
+    <script src="https://kit.fontawesome.com/2b4d337dab.js" crossorigin="anonymous"></script>
+
+    <script>
+            function Read(){
+                let dots = document.getElementById('dots');
+                let more = document.getElementById('more');
+                let btn = document.getElementById('btn');
+
+                if (dots.style.display==='none'){
+                    dots.style.display='inline';
+                    more.style.display='none';
+                    btn.innerHTML="<i class='fas fa-book'></i>" + 'Read More';
+                }
+                else{
+                    dots.style.display='none';
+                    more.style.display='inline';
+                    btn.innerHTML='Read Less';
+                }
+            }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+    
+    
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+        }
+        #col1{
+            width: 50%;
+            box-shadow: -10px 10px 25px rgb(158, 157, 157);
+            padding-left: 30px;
+            padding-top:26px;
+            height: 27rem;
+            border-radius: 5px;
+            margin-left: 40px;
+        }
+        .container{
+            width: 100%;
+            margin: 43px auto;
+            /* margin: 50px auto; */
+            width: 60%;
+            height: 75vh;
+        }
+        #col1 input, #col1 textarea{
+            margin: 6px;
+            width: 90%;
+            padding: 13px;
+            border-radius: 5px;
+            border: none;
+            border: 2px solid rgb(214, 213, 207);
+            /* height: 55px; */
+            /* width: auto; */
+        }
+        
+        #col1 input[type=button]{
+            /* width: 32%; */
+            color: white;
+       background-color: hsl(34, 100%, 50%);
+       font-weight: bold;
+       padding: 13px;
+       border: none;
+        }
+
+        #col1 #name, #col1 #email{
+            width: 43%;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: 30px;
+        }
+        ::placeholder{
+            font-weight: bold;
+            font-size: 12px;
+        }
+        textarea::placeholder{
+            font-size: 14px;
+        }
+
+        h2{
+            margin-left: 6px;
+        }
+        #inp{
+            margin-top: 20px;
+        }
+        #col2{
+            background-color: hsl(34, 100%, 50%);
+            width: 40%;
+            float: right;
+            margin-top: -450px;
+            /* margin-right: 80px; */
+            margin-right: 40px;
+            height: 29rem;
+            color: white;
+            border-radius: 5px;
+        }
+        #col2 p, #col2 h2{
+            margin: 40px 62px;
+        }
+        p span{
+            font-weight: bold;
+        }
+
+
+        nav ul {
+            background-color: black;
+            padding: 17px;
+            float: right;
+        }
+
+        nav {
+            overflow: auto;
+            background-color: black;
+        }
+
+        nav ul li a {
+            color: aliceblue;
+            padding: 10px;
+            text-decoration: none;
+
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a:hover {
+            color: hsl(34, 100%, 80%);
+            ;
+        }
+        #container{
+            margin-top: -10px;
+            font-size: 14px;
+            line-height: 25px;
+        }
+        footer {
+            background-color: black;
+            color: bisque;
+            padding: 12px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        i{
+        font-size:20px;
+        color: hsl(24, 100%, 51%); 
+        background-color:bisque; 
+        border-radius: 15px; 
+        width: 34px; 
+        text-align: center;
+        padding: 5px 0px; 
+        margin-right: 10px;
+        }
+        .navbar img{
+            width: 54px;
+            padding-left: 15px;
+            padding-top: 6px;
+        }
+        h3.logoh{
+            color: white;
+            padding-top: 15px;
+            margin-left: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="https://seeklogo.com/images/R/rover-inu-rover-logo-95FF2F26C3-seeklogo.com.png" alt="Image not found">
+            <h3 class="logoh">Z Blog</h3>
+            <span class="logo">Z Blog</span>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h1>Contact Form</h1>
+
+    <div class="container">
+        
+        <div id="col1">
+            <form action="#">
+            <h2>Get in touch</h2>
+             <div id="inp">
+            <input type="text" id="name" name="name" placeholder="Name">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <br>
+            <input type="text" name="subject" id="subject" placeholder="Subject">
+            <br>
+            <textarea name="msg" id="msg" cols="20" rows="7" placeholder="Message"></textarea>
+            <br>
+            <input type="button" value="Send Message">
+        </div>
+        </form>
+        </div>
+        <div id="col2">
+            <h2>Contact us</h2>
+            <div id="container">
+            
+            <p><i class='fas fa-map-marker'></i> <span>Address</span> 123 west 163 street, Suite 291 Newyork NY 20356</p>
+            <p><i class='fas fa-phone'></i> <span>Phone:</span> + 1234 5678 98</p>
+            <p><i class='fas fa-location-arrow'></i> <span>Email:</span> info@zblog.com</p>
+            <p><i class='fas fa-globe'></i> <span>Website:</span> zblog.com</p>
+        </div>
+        </div>
+    </div>
+    <footer>Copyright &COPY; 2022 all rights reserved</footer>
+
+    <script src="https://kit.fontawesome.com/2b4d337dab.js" crossorigin="anonymous"></script>
+</body>
+</html>
